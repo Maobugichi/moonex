@@ -28,7 +28,7 @@ module.exports = {
             height:"0px", fontSize:"0%", display: "none"
           },
           "100%": {
-            height: "50px",fontSize:"80%", display: "block"
+            height: "50px",fontSize:"90%", display: "block"
           }
         }
       },

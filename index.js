@@ -22,9 +22,12 @@ cancel.addEventListener("click", () => {
 cell.forEach((item,index) => {
     item.addEventListener("click", () => {
         item.childNodes[1].setAttribute("src","./assests/Chevron_Down_M.svg")
-        grow[index].classList.add("animate-grow")
-        grow[index].classList.remove("hidden")
-        
+        grow[index].classList.toggle("animate-grow")
+        grow[index].classList.toggle("hidden") 
+
+        if (grow[index].className.includes("hidden")) {
+            item.childNodes[1].setAttribute("src","./assests/Minus_L.svg")
+        }
     })
     
 })
